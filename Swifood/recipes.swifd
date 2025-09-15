@@ -1,0 +1,35 @@
+Recipe Boiled_Egg {
+    Ingredients:
+        Egg 4ea, Salt 8g, Water.
+
+    Steps:
+        put [Water, Salt] (in: pot).
+        heat pot (until: boils).
+        boil Egg (for: 00:07:00).
+}
+
+Recipe Test_Analyze_Equipments {
+    Ingredients:
+        Egg 4ea.
+
+    Steps:
+        boil Egg (for: 00:07:00).
+}
+
+Recipe Test_Recipe_Error_Check {
+    Ingredients:
+        Egg 4ea, Salt, Water.
+
+    Steps:
+        put Water (in: pot).
+        boil Egg (for: 00:07:00).
+}
+
+Recipe Test_Recipe_Error_Check_Two {
+    Ingredients:
+        Egg 4ea.
+
+    Steps:
+        put Water (in: pot).
+        boil Egg (for: 00:07:00).
+}
