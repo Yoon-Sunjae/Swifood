@@ -177,6 +177,7 @@ int Recipe::_check_ingredients()
     for (const auto& ingredient: _ingredients) {
         if (g_swifood->recipeManager.is_defined(ingredient.name)) {
             _relatedRecipes.insert(ingredient.name);
+            _ingredientInIngredients.insert(ingredient.name);
         } else if (!g_swifood->ingredientManager.is_defined(ingredient.name)) {
             ErrorHandler::get_instance().report("Ingredient", ingredient.name, "is not defined.");
             checkSum++;
