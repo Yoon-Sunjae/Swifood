@@ -1,6 +1,6 @@
 %{
 #include "swifood.hpp"
-#include "globals.hpp" // g_swifood 전역 객체에 접근하기 위해 포함
+#include "globals.hpp"
 #include "recipe.hpp"
 #include <string>
 #include <vector>
